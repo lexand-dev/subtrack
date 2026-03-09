@@ -8,10 +8,21 @@
     },
     "name": "subtrack",
     "slug": "subtrack",
-    "plugins": ["expo-font"],
+    "plugins": [
+      "expo-font"
+    ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d9427734-c5df-419d-898a-9e3f599be667"
+      }
+    },
+    "owner": "lexand-dev",
+    "android": {
+      "package": "com.lexanddev.subtrack"
     }
   }
 }

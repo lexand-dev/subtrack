@@ -3,5 +3,5 @@ import { env } from "@subtrack/env/server";
 
 export const polarClient = new Polar({
   accessToken: env.POLAR_ACCESS_TOKEN,
-  server: "sandbox",
+  server: "production",
 });
