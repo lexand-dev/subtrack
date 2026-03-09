@@ -1,0 +1,14 @@
+{
+  "framework": "hono",
+  "buildCommand": "turbo run build",
+  "installCommand": "bun install",
+  "scope": "metro-2033",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/server"
+    }
+  ],
+  "ignoreCommand": "npx turbo-ignore"
+}

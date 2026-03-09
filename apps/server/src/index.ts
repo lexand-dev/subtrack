@@ -51,7 +51,7 @@ app.post("/ai", async (c) => {
 });
 
 app.get("/", (c) => {
-  return c.text("OK");
+  return c.text("OK from Hono server!");
 });
 
 export default app;
