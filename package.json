@@ -1,0 +1,33 @@
+{
+  "name": "subtrack",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "check-types": "turbo check-types",
+    "dev:native": "turbo -F native dev",
+    "dev:web": "turbo -F web dev",
+    "dev:server": "turbo -F server dev",
+    "db:push": "turbo -F @subtrack/db db:push",
+    "db:studio": "turbo -F @subtrack/db db:studio",
+    "db:generate": "turbo -F @subtrack/db db:generate",
+    "db:migrate": "turbo -F @subtrack/db db:migrate"
+  },
+  "dependencies": {
+    "@subtrack/env": "workspace:*",
+    "dotenv": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@subtrack/config": "workspace:*",
+    "@types/bun": "catalog:",
+    "turbo": "^2.8.12",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.14.0"
+}
