@@ -13,7 +13,7 @@ export const env = createEnv({
     NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
   },
   client: {},
-  clientPrefix: "PUBLIC_",
+  clientPrefix: "",
   runtimeEnv: process.env,
   emptyStringAsUndefined: true,
 });
